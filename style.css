@@ -1,0 +1,788 @@
+*{
+    width: 100%;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --x:rgb(184, 159, 128);
+    --y:rgb(223, 201, 178);
+}
+#top{
+    height: 300px;
+}
+#sec{
+    height: 4vh;
+    width: 100%;
+    background-color: var(--x);
+}
+#sec1{
+    background-color: var(--y)
+}
+#sec1 #k{
+    font-family: "Grey Qo", cursive;
+    font-weight: 500;
+    font-size: 95px;
+}
+#sec1 h1{
+    font-family: "Cinzel", serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 60px;
+}
+@media (max-width:600px) {
+    #sec1 h1{
+    font-family: "Cinzel", serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+    margin-top: -5px;
+    }
+    #sec1 #k{
+        font-size: 70px;
+        font-weight: 500;
+    }
+    #sec1 .slogan{
+        font-size: 9px;
+    }
+    #sec1 .bar{
+        margin-top: -12%;
+        margin-bottom: -3%;
+    }
+}
+#sec1 .slogan{
+    font-size: 13px; 
+    margin-top: -20px; 
+    margin-bottom: 2%;
+}
+#sec1 .bar i:hover{
+    color: var(--x);
+}
+
+#sec2{
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: move 25s infinite;
+}
+@keyframes move {
+    0%{
+        background-image: url(./images/sec2bg.jpg);
+    }
+    10%{
+        background-image: url(./images/sec2bg.jpg);
+    }
+    20%{
+        background-image: url(./images/sec2bg_.jpg);
+    }
+    30%{
+        background-image: url(./images/sec2bg_.jpg);
+    }
+    40%{
+        background-image: url(./images/sec2bg3.jpg);
+    }
+    50%{
+        background-image: url(./images/sec2bg3.jpg);
+    }
+    60%{
+        background-image: url(./images/sec2bg4.jpg);
+    }
+    70%{
+        background-image: url(./images/sec2bg4.jpg);
+    }
+    80%{
+        background-image: url(./images/sec2bg5.jpg);
+    }
+    90%{
+        background-image: url(./images/sec2bg5.jpg);
+    }
+    100%{
+        background-image: url(./images/sec2bg.jpg);
+    }
+
+}
+#sec2 h1{
+    margin-top: 45%;
+    color: white;
+    font-size: 55px;
+    font-family: "Abril Fatface", serif;
+}
+.navbar li a{
+    font-weight: 600;
+    font-family: "Platypi", serif;
+}
+.navbar li a:hover{
+    color: var(--x);
+    
+}
+.navbar li #acnt{
+    color: rgb(214, 31, 31);
+    text-decoration: none;
+}
+.dropdown-item1{
+    font-size: 9px;
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+}
+
+#main{
+    background-color: var(--y);
+}
+
+#sec3 #p{
+    font-family: "Cinzel", serif;
+}
+#sec3{
+    width: 100%;
+    animation: head  ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+}
+@keyframes head {
+    from{
+        opacity: 0.6;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+
+#sec4{
+    width: 100%;  
+    margin-top: 3%;
+}
+ 
+@media (max-width:600px) {
+    #sec4 .image1{
+        height: 500px;
+    }
+    #sec4 .image2{
+        height: 300px;
+    }
+    #sec4 .image3{
+        height: 315px;
+    }
+    #sec4 .ov{
+        bottom: 25%; 
+    }
+    #sec4 .ovv{
+        bottom: 14%; 
+    }
+}
+
+.image{
+    animation: appear  ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+
+}
+@keyframes appear {
+    from{
+        opacity: 0.6;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+
+.over{
+    position:absolute;
+    bottom: 35%;
+    z-index: -5;
+    text-align: center;
+    /* margin-top: 25%; */
+}
+.over h1{
+    font-size: 70px;
+    color: rgb(0, 0, 0);  
+    font-family: "Playfair Display", serif;  
+}
+.over p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);  
+    font-family: "Playfair Display", serif; 
+    text-align: center; 
+    padding: 0px 50px;
+}
+.over a{
+    font-size: 20px;
+    font-family: "Playfair Display", serif; 
+    text-decoration: none; 
+    font-weight: 600; 
+}
+#img1:hover{
+    cursor: pointer;
+    opacity: 0.2;
+    z-index: -3;   
+}
+
+
+.over1{
+    position:absolute;
+    bottom: 17%;
+    z-index: -3;
+    text-align: center;
+}
+.over1 h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);  
+    font-family: "Playfair Display", serif;  
+}
+.over1 p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);  
+    font-family: "Playfair Display", serif; 
+    text-align: center; 
+    padding: 0px 50px; 
+}
+.over1 a{
+    font-size: 20px;
+    font-family: "Playfair Display", serif; 
+    text-decoration: none; 
+    font-weight: 600; 
+}
+.img2:hover{
+    cursor: pointer;
+    opacity: 0.2;
+    z-index: -3;
+}
+
+
+.over3{
+    position:absolute;
+    bottom: 17%;
+    z-index: -3;
+    text-align: center;
+    /* margin-top: 2%; */
+}
+.over3 h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);  
+    font-family: "Playfair Display", serif;  
+}
+.over3 p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);  
+    font-family: "Playfair Display", serif; 
+    text-align: center; 
+    padding: 0px 50px; 
+}
+.over3 a{
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    text-decoration: none; 
+    font-weight: 600;   
+}
+.img4:hover{
+    cursor: pointer;
+    opacity: 0.2;
+    z-index: -3;
+}
+
+
+
+#sec5{
+    height: 55vh;
+    width: 100%;
+    margin-top: 3%;
+    background-image: url(./images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:700px) {
+    #sec5{
+        margin-top: 10%;
+    }
+}
+#m{
+    font-family: "Grey Qo", cursive;
+    font-weight: 500;
+    font-size: 80px;
+}
+#sec5 h1{
+    font-family: "Cinzel", serif;
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: 6%;
+}
+#sec5 h4{
+    color: var(--x);
+    font-weight: 200;
+}
+#sec5:hover{
+    cursor: pointer;
+}
+.bttn{
+    height: 40px;
+    width: 130px;
+    padding: 6px;
+    background-color: white;
+}.bttn:hover{
+    background-color: rgb(209, 199, 199);
+}
+
+
+#sec6{
+    padding-bottom: 5%;
+}
+#sec6 h2{
+    font-weight: 300;
+    font-size: 40px;
+}
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 515px;
+    padding: 5% 3%;
+}
+.scrolling-wrapper .pic {
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      margin: 0% 4px;    
+}
+.scrolling-wrapper {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
+  }
+
+.scrolling-wrapper {
+    animation: zoom  ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+}
+@keyframes zoom {
+    from{
+        opacity: 0.6;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.pic{
+    position: relative;
+}
+.name{
+    position: absolute;
+    bottom: -40%;
+}
+.pic button{
+    border: none;
+    box-shadow: 0px 0px 15px 0px  rgb(167, 134, 97);
+    border-radius: 8px;
+    height: 40px;
+    width: 150px;
+    margin-top: 3%;
+}
+.pic button:hover{
+    background-color: rgb(185, 153, 115);
+}
+
+.pic1{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/sum1.jpg);
+    background-size: cover;
+}
+.pic1:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/sum2.jpeg);
+    background-size: cover;
+}
+
+.pic2{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/summ1.webp);
+    background-size: cover;
+}
+.pic2:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/summ2.jpg);
+    background-size: cover;
+}
+
+.pic3{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/watch1.webp);
+    background-size: cover;
+}
+.pic3:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/watch2.webp);
+    background-size: cover;
+}
+
+.pic4{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/jeans1.webp);
+    background-size: cover;
+}
+.pic4:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/jeans2.jpeg);
+    background-size: cover;
+}
+
+.pic5{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/summm1.webp);
+    background-size: cover;
+}
+.pic5:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/summm2.jpeg);
+    background-size: cover;
+}
+
+.pic6{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/jean1.jpg);
+    background-size: cover;
+}
+.pic6:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/jean2.jpg);
+    background-size: cover;
+}
+
+.pic7{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/top1.webp);
+    background-size: cover;
+}
+.pic7:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/top2.webp);
+    background-size: cover;
+}
+
+.pic8{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/watch4.webp);
+    background-size: cover;
+}
+.pic8:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/watch3.webp);
+    background-size: cover;
+}
+
+.pic9{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/watch5.webp);
+    background-size: cover;
+}
+.pic9:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/watch6.webp);
+    background-size: cover;
+}
+
+.pic10{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/top3.webp);
+    background-size: cover;
+}
+.pic10:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/top4.webp);
+    background-size: cover;
+}
+
+.pic11{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/hand1.webp);
+    background-size: cover;
+}
+.pic11:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/hand2.jpg);
+    background-size: cover;
+}
+
+.pic12{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/hand3.jpeg);
+    background-size: cover;
+}
+.pic12:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/hand4.jpg);
+    background-size: cover;
+}
+
+.pic13{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/top5.webp);
+    background-size: cover;
+}
+.pic13:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/top6.webp);
+    background-size: cover;
+}
+
+.pic14{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/hand5.jpeg);
+    background-size: cover;
+}
+.pic14:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/hand6.jpeg);
+    background-size: cover;
+}
+
+.pic15{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/hand7.jpg);
+    background-size: cover;
+}
+.pic15:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/hand8.webp);
+    background-size: cover;
+}
+
+.pic16{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/jeans4.jpeg);
+    background-size: cover;
+}
+.pic16:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/jeans3.webp);
+    background-size: cover;
+}
+
+.pic17{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/jeans5.webp);
+    background-size: cover;
+}
+.pic17:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/jeans6.jpg);
+    background-size: cover;
+}
+
+.pic18{
+    height: 400px;
+    width: 300px;
+    background-image: url(./images/jeans7.jpeg);
+    background-size: cover;
+}
+.pic18:hover{
+    height: 300px;
+    width: 300px;
+    background-image: url(./images/jeans8.jpeg);
+    background-size: cover;
+}
+
+
+
+
+#sec7{
+    padding-bottom: 8%;
+    padding: 8% 0%;
+    background-color: rgb(236, 220, 202);
+}
+.view{
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 3% 25%;
+    border: 1px solid rgb(168, 150, 129);
+}
+.view:hover{
+    cursor: pointer;
+    background-color: rgb(223, 205, 184);
+}
+.scroller {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 515px;
+    padding: 7% 1%;
+}
+@media (max-width:600px) {
+    .scroller{
+        margin-top: 8%;
+    }
+}
+.scroller .flip-card {
+    display: inline-block;
+    width: 450px;
+    height: 500px;
+    margin: 0% 4px;  
+    position: relative; 
+}
+.scroller {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+}
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: black;
+    padding-top: 25%;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.scroller{
+    animation: card  ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+}
+@keyframes card {
+    from{
+        opacity: 0.6;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#sec8{
+    /* height: 40vh; */
+    padding-bottom: 5%;
+    background-color: var(--x);
+}
+@media (max-width:600px) {
+    #sec8{
+        padding-bottom: 25%;
+    }
+}
+#sec8 .icon{
+    display: inline;
+}
+#sec8 .icon:hover{
+    color: rgb(240, 234, 228);;
+}
+#sec8 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+#sec8 a:hover{
+    color: rgb(240, 234, 228);
+}
+#sec8 .sub{
+    display: inline;
+}
+#sec8 button{
+    background-color: black;
+}
+#sec8 button:hover{
+    background-color: rgb(156, 133, 109);;
+}
+@media (max-width:600px) {
+    #sec8 .footer{
+        margin-left: 1%;
+    }
+}
+
+#sec9{
+    height: 2vh;
+    background-color:rgb(236, 220, 202) ;
+}
